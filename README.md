@@ -1,24 +1,9 @@
-# administer
+# 美影管理
+美影管理项目
 
-## Project setup
-```
-npm install
-```
+## 介绍
+美影管理（Mflix Administer）后端项目组。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 软件架构
+1. Nodejs 13
+2. Vue CLI 4
