@@ -15,7 +15,7 @@
           </el-col>
         </el-row>
         <el-row :gutter="20">
-          <el-col :span="12">
+          <el-col :span="8">
             <el-form-item label="导演">
               <el-button v-on:click="movie.directors.push({})">增加</el-button>
               <el-button v-on:click="movie.directors.pop()">减少</el-button>
@@ -24,13 +24,22 @@
               <el-input v-model="director.name"></el-input>
             </el-form-item>
           </el-col>
-          <el-col :span="12">
+          <el-col :span="8">
             <el-form-item label="主演">
               <el-button v-on:click="movie.starrings.push({})">增加</el-button>
               <el-button v-on:click="movie.starrings.pop()">减少</el-button>
             </el-form-item>
             <el-form-item v-for="(starring, index) in movie.starrings" v-bind:key="index">
               <el-input v-model="starring.name"></el-input>
+            </el-form-item>
+          </el-col>
+          <el-col :span="8">
+            <el-form-item label="国家">
+              <el-button v-on:click="movie.countries.push({})">增加</el-button>
+              <el-button v-on:click="movie.countries.pop()">减少</el-button>
+            </el-form-item>
+            <el-form-item v-for="(country, index) in movie.countries" v-bind:key="index">
+              <el-input v-model="country.name"></el-input>
             </el-form-item>
           </el-col>
         </el-row>
@@ -117,6 +126,7 @@ export default {
       movie: {
         id: 1,
         chineseName: "",
+        countries: [],
         directors: [],
         introduction: "",
         launches: [],
