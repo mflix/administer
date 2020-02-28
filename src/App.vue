@@ -1,6 +1,6 @@
 <template>
   <el-container id="app">
-    <!-- <el-aside>
+    <el-aside>
       <el-row>
         <el-col>
           <el-menu default-active="1" router>
@@ -19,7 +19,7 @@
           </el-menu>
         </el-col>
       </el-row>
-    </el-aside>-->
+    </el-aside>
     <el-container>
       <el-main>
         <router-view></router-view>

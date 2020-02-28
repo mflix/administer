@@ -168,7 +168,7 @@ export default {
     submit: function() {
       this.$axios
         .post(
-          "http://localhost:8080/movie/",
+          "/movie/",
           this.movie,
           function() {
             this.$message("提交成功！");

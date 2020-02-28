@@ -5,6 +5,9 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 
+console.log(process.env.VUE_APP_HOST)
+console.log()
+Axios.defaults.baseURL = process.env.VUE_APP_HOST
 Vue.prototype.$axios = Axios
 Vue.config.productionTip = false
 
