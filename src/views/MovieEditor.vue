@@ -77,8 +77,8 @@ export default {
           label: "电影"
         },
         {
-          value: "电视剧",
-          label: "电视剧"
+          value: "剧集",
+          label: "剧集"
         }
       ],
       launches: [
