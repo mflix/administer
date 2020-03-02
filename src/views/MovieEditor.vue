@@ -71,7 +71,7 @@ export default {
       this.$axios
         .post("/movie/", this.movie)
         .then(
-          function(response) {
+          function() {
             this.loading = false;
             this.$message("提交成功！");
           }.bind(this)
