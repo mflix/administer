@@ -74,7 +74,6 @@ export default {
           function(response) {
             this.loading = false;
             this.$message("提交成功！");
-            this.movie = response.data.object;
           }.bind(this)
         )
         .catch(
